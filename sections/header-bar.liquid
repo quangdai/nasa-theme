@@ -1,14 +1,17 @@
-<div class="header-bar">
-    <h1>header bar</h1>
-</div>
+{% if section.settings.topbar_status == true %}
+    <div class="topbar">
+        <h1>topbar</h1>
+    </div>
+{% endif %}
 
 {% schema %}{
     "name":"Header Bar",
     "settings":[
         {
             "type": "checkbox",
-            "id": "status",
-            "label":"Turn On"
+            "id": "topbar_status",
+            "label":"Turn On",
+            "default": true
         }
     ]
 }
