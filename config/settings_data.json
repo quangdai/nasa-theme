@@ -29,7 +29,7 @@
       "header-bar": {
         "type": "header-bar",
         "settings": {
-          "status": false
+          "topbar_status": false
         }
       },
       "header": {
