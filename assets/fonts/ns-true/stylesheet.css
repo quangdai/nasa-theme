@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'NSTrueBold';
+    src: url('NSTrueBold.woff2') format('woff2'),
+        url('NSTrueBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NSTrueRegular';
+    src: url('NSTrueRegular.woff2') format('woff2'),
+        url('NSTrueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NSTrueMedium';
+    src: url('NSTrueMedium.woff2') format('woff2'),
+        url('NSTrueMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
