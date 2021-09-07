@@ -26,15 +26,10 @@
         "settings": {
         }
       },
-      "header-bar": {
-        "type": "header-bar",
-        "settings": {
-          "topbar_status": true
-        }
-      },
       "header": {
         "type": "header",
         "settings": {
+          "topbar": false,
           "color_scheme": "background-1",
           "logo_width": 100,
           "logo_position": "middle-left",
