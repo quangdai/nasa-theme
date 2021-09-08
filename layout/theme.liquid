@@ -119,6 +119,7 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'pe-icon-7-stroke.css' | asset_url | stylesheet_tag }}
     {{ 'helper.css' | asset_url | stylesheet_tag }}
+    {{ 'nasa-icon.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
     <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -151,6 +152,10 @@
 
     {% section 'footer' %}
 
+
+    {% section 'modal' %}
+
+
     <ul hidden>
         <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
     </ul>
@@ -182,6 +187,8 @@
     {%- if settings.predictive_search_enabled -%}
     <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script src="{{ 'bootstrap.bundle.min.js' | asset_url }}" defer="defer"></script>
 </body>
 
 </html>
