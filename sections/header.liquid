@@ -78,7 +78,92 @@
   </symbol>
 </svg>
 
-<i class="pe7-icon pe-7s-user"></i>
+
+<header class="header heade-type-1">
+    <div class="topbar-wrap">
+        <div class="container container-wrap">
+            <div class="topbar-flex">
+                <div class="topbar-left">
+                    <a href="javascript:;" class="login-register" data-bs-toggle="modal" data-bs-target="#login-register">
+                        <i class="pe7-icon pe-7s-user"></i>
+                        <span class="nasa-login-title">Login / Register</span>
+                    </a>
+                </div>
+                <div class="topbar-right">
+                    <div class="select-languages">
+                        <a href="javascript:;" class="current-lang">
+                            <img src="{{ 'images/icon/en.png' | asset_url }}" alt="">
+                            <span class="lable">
+                                English
+                            </span>
+                        </a>
+                        <ul class="list-languages sub-menu">
+                            <li class="item-lang">
+                                <a href="javascript:;">
+                                    <img src="{{'images/icon/de.png' | asset_url }}" alt="">
+                                    <span class="lable">
+                                        Deutsch
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="item-lang">
+                                <a href="javascript:;">
+                                    <img src="{{'images/icon/fr.png' | asset_url }}" alt="">
+                                    <span class="lable">
+                                        Français
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="item-lang">
+                                <a href="#" title="Requires WPML">&nbsp;Requires WPML</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-currencies">
+                        <a href="javascript:;" class="item-toggle">
+                            US Dollar
+                        </a>
+                        <ul class="list-currencies sub-menu">
+                            <li>
+                                <a href="#">Euro (EUR)</a>
+                            </li>
+                            <li>
+                                <a href="#">Indian Rupee (INR)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="header-icons">
+                        <li class="first nasa-icon-search">
+                            <a class="search-icon topbar-desk-search js-search-show" href="javascript:void(0);" title="Search">
+                                <i class="nasa-icon icon-nasa-search"></i>
+                            </a>
+                        </li>
+                        <li class="nasa-icon-wishlist">
+                            <a class="wishlist-link nasa-wishlist-link" href="javascript:void(0);" title="Wishlist" data-bs-toggle="modal" data-bs-target="#cart-wishlist">
+                                <i class="nasa-icon icon-nasa-like"></i>
+                                <span class="nasa-wishlist-count wishlist-number nasa-product-empty">
+                                    <span class="nasa-text hidden-tag">Wishlist</span>
+                                    <span class="nasa-sl">0</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nasa-icon-compare">
+                            <a href="#" title="Compare" class="nasa-show-compare">
+                                <i class="nasa-icon icon-nasa-refresh"></i>
+                                <span class="nasa-compare-count compare-number nasa-product-empty">
+                                    <span class="nasa-text hidden-tag">Compare </span>
+                                    <span class="nasa-sl">0</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
