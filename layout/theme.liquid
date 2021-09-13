@@ -30,6 +30,8 @@
 
     {% render 'meta-tags' %}
 
+    <script src="{{ 'jquery-3.4.1.js' | asset_url }}" defer="defer"></script>
+    
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
 
@@ -189,6 +191,8 @@
     {%- endif -%}
 
     <script src="{{ 'bootstrap.bundle.min.js' | asset_url }}" defer="defer"></script>
+
+
 </body>
 
 </html>

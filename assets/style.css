@@ -16359,8 +16359,9 @@ main {
 }
 
 .header .header-main {
-  padding: 30px 0;
-  position: relative;
+    background-color: #fff;
+    padding: 30px 0;
+    position: relative;
 }
 
 .header .logo h1, .header .logo .h1 {
@@ -16536,13 +16537,13 @@ main {
 }
 
 .menu-primary .menu-item .menu-link i {
-  display: inline-block;
-  visibility: visible;
-  position: absolute;
-  right: 28px;
-  padding-top: 6px;
-  opacity: 0.3;
-  font-size: 100%;
+    display: inline-block;
+    visibility: visible;
+    position: absolute;
+    right: 20px;
+    padding-top: 3px;
+    opacity: 0.8;
+    font-size: 25px;
 }
 
 .menu-primary .menu-item .menu-link:hover {

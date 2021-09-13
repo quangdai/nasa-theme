@@ -161,6 +161,51 @@
             </div>
         </div>
     </div>
+    <div class="header-main">
+        <div class="container container-wrap">
+            <div class="main-form-search">
+                <a href="javascript:void(0);" title="Close search" class="close-search"><i class="pe-7s-close"></i></a>
+                <form action="" class="from-search">
+                    <input class="input-search-key" type="text" placeholder="Search...">
+                    <span class="icon-submit-page"><input type="submit" name="page" value="search"></span>
+                </form>
+            </div>
+
+            
+            <div class="header-main-flex">
+                <div class="logo">
+                    <h1>
+                        {%- if section.settings.logo != blank -%}
+                            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+                            <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+                            src="{{ section.settings.logo | img_url: image_size }}"
+                            loading="lazy"
+                            class="header__heading-logo"
+                            width="{{ section.settings.logo.width }}"
+                            height="{{ section.settings.logo.height }}"
+                            alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+                            >
+                        {%- else -%}
+                            <span class="h2">{{ shop.name }}</span>
+                        {%- endif -%}
+                    </h1>
+                </div>
+                <div class="main-nav">
+                    {% render 'menu-primary' %}
+                </div>
+                <div class="header-icons-wrap">
+                    <div class="icon-mini-cart">
+                        <div class="mini-cart">
+                            <a href="javascript:;" class="cart-link" data-bs-toggle="modal" data-bs-target="#cart-wishlist">
+                                <span class="nasa-icon cart-icon icon icon-nasa-cart-2"></span>
+                                <span class="products-number">01</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
 <div class="d-none">
@@ -678,7 +723,31 @@
     }
   }
 
-  customElements.define('sticky-header', StickyHeader);
+    customElements.define('sticky-header', StickyHeader);
+
+
+
+    $('.switch-register').on('click', function () {
+        $(this).parents('.login-form').removeClass('active').siblings().addClass('active');
+    });
+    $('.switch-login').on('click', function () {
+        $(this).parents('.register-form').removeClass('active').siblings().addClass('active');
+    });
+
+    $('.js-search-show').on('click', function (event) {
+        event.stopPropagation();
+        $('.main-form-search').addClass('active');
+    });
+    $('.close-search').on('click', function (event) {
+        event.stopPropagation();
+        $('.main-form-search').removeClass('active');
+    });
+    $(document).click(function () {
+        $('.main-form-search').removeClass('active');
+    });
+    $('.main-form-search').on('click', function(e){
+        e.stopPropagation();
+    })
 {% endjavascript %}
 
 <script type="application/ld+json">
@@ -811,7 +880,17 @@
       "id": "enable_sticky_header",
       "default": true,
       "label": "t:sections.header.settings.enable_sticky_header.label",
-      "info": "t:sections.header.settings.enable_sticky_header.info"
+      "info": "t:sections.header.settings.enable_sticky_header.info",
+    },
+    "default": {
+        "blocks": [
+            {
+                "type": "link_list"
+            },
+            {
+                "type": "text"
+            }
+        ]
     }
   ]
 }
