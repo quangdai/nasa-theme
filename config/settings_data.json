@@ -28,6 +28,26 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "81f98d3f-dc7a-47f8-a76b-6e02ed454529": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Home",
+              "menu": "footer"
+            }
+          },
+          "68b5efc1-b7d8-4594-b552-0fe718db1716": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Shop",
+              "menu": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "81f98d3f-dc7a-47f8-a76b-6e02ed454529",
+          "68b5efc1-b7d8-4594-b552-0fe718db1716"
+        ],
         "settings": {
           "topbar": false,
           "color_scheme": "background-1",
@@ -42,7 +62,7 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
+          "425fafe1-1fe1-4f6f-a205-d13aa027cb01": {
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
@@ -58,7 +78,7 @@
           }
         },
         "block_order": [
-          "footer-0",
+          "425fafe1-1fe1-4f6f-a205-d13aa027cb01",
           "footer-1"
         ],
         "settings": {
