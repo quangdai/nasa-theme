@@ -23,11 +23,6 @@
         }
     },
     "order": [
-        "image_banner",
-        "rich_text",
-        "featured_products",
-        "collage",
-        "video",
         "multi_column"
     ]
 }
