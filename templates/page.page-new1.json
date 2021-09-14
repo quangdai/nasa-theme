@@ -3,7 +3,7 @@
     "wrapper": "div#div_id.div_class[attribute-one=value]",
     "sections": {
         "main": {
-            "type": "pages"
+            "type": "main-page"
         },
         "image_banner": {
             "type": "image-banner",
