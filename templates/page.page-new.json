@@ -2,27 +2,18 @@
     "name": "Home template",
     "wrapper": "div#div_id.div_class[attribute-one=value]",
     "sections": {
-        "multi_column": {
-            "type": "multicolumn",
-            "blocks": {
-                "column1": {
-                    "type": "column"
-                },
-                "column2": {
-                    "type": "column"
-                },
-                "column3": {
-                    "type": "column"
-                }
-            },
-            "block_order": [
-                "column1",
-                "column2",
-                "column3"
-            ]
+        "main": {
+            "type": "main-page"
+        },
+        "form": {
+            "type": "contact-form",
+            "settings": {
+                "heading": ""
+            }
         }
     },
     "order": [
-        "multi_column"
+        "main",
+        "form"
     ]
 }
