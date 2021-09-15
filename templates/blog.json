@@ -2,9 +2,16 @@
   "sections": {
     "main": {
       "type": "main-blog"
+    },
+    "featured": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "featured"
   ]
 }
