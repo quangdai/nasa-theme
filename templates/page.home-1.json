@@ -1,16 +1,19 @@
 {
-    "sections": {
-        "main": {
-            "type": "main-page",
-            "settings": {}
-        },
-        "featured": {
-            "type": "featured-page",
-            "settings": {}
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
     },
-    "order": [
-        "main",
-        "featured"
-    ]
+    "featured": {
+      "type": "featured-page",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1200x450.png"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured"
+  ]
 }
