@@ -33,14 +33,20 @@
             "type": "link_list",
             "settings": {
               "heading": "Home",
-              "menu": "footer"
+              "menu_link": "",
+              "sub_type": "menu_1",
+              "menu": "footer",
+              "mega_column": "5"
             }
           },
           "68b5efc1-b7d8-4594-b552-0fe718db1716": {
             "type": "link_list",
             "settings": {
               "heading": "Shop",
-              "menu": "footer"
+              "menu_link": "",
+              "sub_type": "menu_1",
+              "menu": "footer",
+              "mega_column": "5"
             }
           }
         },
