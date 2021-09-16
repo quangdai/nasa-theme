@@ -55,13 +55,9 @@
           "68b5efc1-b7d8-4594-b552-0fe718db1716"
         ],
         "settings": {
-          "topbar": false,
-          "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/logo.png",
-          "logo_width": 250,
-          "logo_position": "middle-left",
-          "menu": "main-menu",
-          "show_line_separator": true,
+          "topbar": true,
+          "logo": "shopify:\/\/shop_images\/logo_867eea0f-6f87-48f8-9f84-9886f7ed6a10.png",
+          "logo_width": 150,
           "enable_sticky_header": true
         }
       },
