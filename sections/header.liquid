@@ -178,8 +178,8 @@
                         <a href="{{ routes.root_url }}">
                             {%- if section.settings.logo != blank -%}
                                 {%- assign image_size = section.settings.logo_width | append: 'x' -%}
-                                <img 
-                                src="{{ section.settings.logo | img_url }}"
+                                <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+                                src="{{ section.settings.logo | img_url: image_size }}"
                                 loading="lazy"
                                 class="header__heading-logo"
                                 width="{{ section.settings.logo.width }}"
@@ -816,6 +816,18 @@
             "default": 100,
             "unit": "t:sections.header.settings.logo_width.unit",
             "label": "t:sections.header.settings.logo_width.label"
+        },
+        {
+            "type": "link_list",
+            "id": "menu",
+            "default": "main-menu",
+            "label": "t:sections.header.settings.menu.label"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_line_separator",
+            "default": true,
+            "label": "t:sections.header.settings.show_line_separator.label"
         },
         {
             "type": "checkbox",
